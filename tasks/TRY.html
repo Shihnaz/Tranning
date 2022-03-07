@@ -3,12 +3,21 @@
 <head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
    
-:root{background-color:rgb(230, 230, 230) ;}
+:root{background-color:rgb(230, 230, 230) ;
+--flexboxcolor:rgb(230, 230, 230);
+--headercolor:#a2a2a2;
+--anchorcolor:#5ad67d;
+--img1skew:-3deg;
+--skew:3deg;
+--fontcolor:rgb(0, 0, 0);
+
+}
 .flex-container {
   display: flex;
   flex-direction: column;
-  background-color:rgb(230, 230, 230) ;
+  background-color:var(--flexboxcolor) ;
 }
 
 .d1{
@@ -44,7 +53,7 @@
 }
 #anchor,a{
 text-align: end;
-color: #5ad67d;
+color: var(--anchorcolor);
 margin-right: 10px;
 
 }
@@ -52,7 +61,7 @@ margin-right: 10px;
     text-align: right;
     margin-right: 10px;
 
-    color: #5ad67d;
+    color: var(--anchorcolor);
 }
 hr {
   border-top: 8px solid #5ad67d;
@@ -69,20 +78,28 @@ img:hover{
 a:hover{
   color:blue;
 }
-
+p{
+  font-family: sans-serif;
+  color: var(--fontcolor);
+}
 p::selection{
   color:#5ad67d
 }
+
 </style>
+<h1 style="text-align: center; font-family:'Poppins', sans-serif;"><I>My Website</I></h1>
+<label><i>choose the text color that you like</i> </label>
+<input type="color" value="rgb(0,0,0)">
+
 </head>
 <body>
 
 <div class="flex-container"> 
-    <div class="d1" style="margin-top:20px">
+    <div class="d1" style="margin-top:20px;">
         
         <div class="block1" > 
 
-          <img src="./im1.jpg" style="text-align: left;width: 300px;height:290px;transform: skew(-3deg); "id='img'  >
+          <div id="im1"><img src="./im1.jpg" style="text-align: left;width: 300px;height:290px; transform: skewX(-3deg);"id='img'  ></div>
           <div style="  background-color: WHITE;
           MARGIN-LEFT: 0;
           border-left: 3px solid white;
@@ -93,15 +110,14 @@ p::selection{
             <div class="item2 "style="transform:skewx(177deg)"><h2 style="font-size: 20px;margin-left: 20px;margin-top: 15px;font-family: Poppins ;margin-bottom: 0;" >Learning To  code</h2> 
             <div id="text" >Openning A Door To the Future</div>
             <hr>
-            <p style="margin-left: 20px;font-family: sans-serif">some text this is for trying if you are intrested you can read more
+            <p style="margin-left: 20px;">some text this is for trying if you are intrested you can read more
                 some text this is for trying if you are intrested you can read more
                 if you are intrested you can read moreif you are intrested you can read more
                 <br>
                 <br>
             </p>
             <div id="anchor"><a href="https://www.google.com"><b>Read More</b></a></div>
-            
-            
+    
             
         </div> 
 
@@ -110,13 +126,11 @@ p::selection{
     </div>
     <div  style="margin-top: 30px">
         <div class="block1"> 
-
-            
-            <div class="item3" >
+            <div class="item3" style="transform:skew(var(--skew));" >
                 <h2 style="font-size: 20px;margin-left: 15px;margin-top: 15px;font-family: Poppins;margin-bottom: 0;"> Mastering the Language</h2> 
                 <div id="text"> Java is not the same as JavaScript</div>
                 <hr >
-                <p style="margin-left: 15px;font-family: sans-serif;margin-right: 10px;"> some text this is for trying if you are intrested you can read more
+                <p style="margin-left: 15px;margin-right: 10px;"> some text this is for trying if you are intrested you can read more
                     some text this is for trying if you are intrested you can read more
                     if you are intrested you can read morei f you are intrested you can read more
                     <br>
@@ -132,20 +146,26 @@ p::selection{
           border-right: 3px solid white;
           MARGIN-RIGHT: 0;
           WIDTH: 50px;
+          
           transform: skewX(183deg);"></div>
-            <img src="./im2.jpg"style="text-align: right;width: 300px;height:290px;transform: skew( 3deg); border:3px solid transparent">
-
-       
-
-
+          
+            <img src="./im2.jpg"style="text-align: right;width: 300px;height:290px;transform: skew(var(--skew)); border:3px solid transparent">
 
 
     </div>
     
   
 </div>
-
+<script>
+  var input = document.querySelector('input');
+  var par=document.querySelectorAll("p");
+  input.addEventListener('change', function(){
+  par[0].style.setProperty('--fontcolor', input.value);
+  par[1].style.setProperty('--fontcolor', input.value)
+})
+</script>
 </body>
 </html>
+
 
 
