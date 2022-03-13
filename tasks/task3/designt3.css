@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+:root {
+  --array: #99ff33;
+  --titlecolor: white;
+  --maincolor: rgb(166, 77, 255);
+  --cardB: rgb(26, 26, 255);
+
+  --cardR2: rgb(156, 35, 146);
+  --cardR3: rgb(17, 167, 236);
+
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  gap: 50px 20px;
+
+  background-color: var(--maincolor);
+  margin-bottom: 10px;
+}
+
+.card {
+  width: 96%;
+  height: 40%;
+  margin-left: 10px;
+  background-image: linear-gradient(#1a75ff, var(--cardB));
+  /* background-color:var(--cardB) ; */
+
+}
+
+.card:nth-child(3n+3) {
+  background-image: linear-gradient(#1a75ff, var(--cardB));
+}
+
+.card:nth-child(3n-1) {
+  background-image: linear-gradient(black, var(--cardR2));
+}
+
+.card:nth-child(4n) {
+  background-image: linear-gradient(black, var(--cardR3));
+}
+
+.grid-container:nth-child(2n-1) {
+  background-color: var(--cardB);
+}
+
+.grid-container:nth-child(3n-1) {
+  background-color: var(--cardR2);
+}
+
+.grid-container:nth-child(4n-1) {
+  background-color: var(--cardR3);
+}
+
+body {
+  background-color: var(--maincolor);
+}
+
+img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: left;
+  border: 3px solid white;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#about {
+  color: var(--titlecolor);
+  font-family: "Poppins", sans-serif;
+  padding-top: 10px;
+  margin-left: 0;
+}
+
+#name {
+  padding-top: 10px;
+  color: var(--titlecolor);
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+}
+
+div {
+  margin-left: 0;
+}
+
+h6 {
+  text-align: left;
+}
+
+i {
+  font-size: 15px;
+  margin-top: 14px;
+}
+
+.grid-container {
+  display: grid;
+  width: 95.46%;
+  grid-template-columns: auto auto;
+  background-color: var(--cardB);
+  padding: 10px;
+  height: 300px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255);
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 9px;
+  font-size: 30px;
+  width: 92%;
+  text-align: left;
+}
+
+@media (max-width: 1100px) and (min-width: 768px) {
+  .main-container {
+    grid-template-columns: 49% 49%;
+    gap: 30px 15px;
+    background-color: var(--maincolor);
+  }
+
+  .grid-container {
+    width: 98%;
+    padding: 0;
+  }
+
+  .grid-item {
+    width: 95%;
+    font-size: 28px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  i {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 400px) {
+  .main-container {
+    grid-template-columns: 93%;
+    gap: 50px;
+    background-color: var(--maincolor);
+    margin-bottom: 10px;
+  }
+
+  .grid-container {
+    width: 99%;
+    padding: 0;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .grid-item {
+    font-size: 40px;
+    padding: 10px;
+    text-align: left;
+  }
+
+  i {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.s button {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  background: #161718;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+
+}
+
+.s button:hover {
+  background: #0b7dda;
+}
+
+.s input[type=text] {
+
+  font-size: 20px;
+  border: 1px solid grey;
+  margin-top: 5px;
+  width: 70%;
+  height: 40px;
+  background: #f1f1f1;
+}
+.sort{
+  text-align: right;
+  margin-left: 10px;
+}
+.sort button{
+  width: 5%;
+  height: 40px;
+  text-align: center;
+  background: #161718;
+  color: white;
+}
