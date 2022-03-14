@@ -1,0 +1,80 @@
+$titlecolor:rgb(53, 68, 53);
+$maincolor:rgb(255, 255, 230);
+$cardB:rgb(215, 189, 189);
+$val1:767px;
+$val2:991px;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body {
+        background-color: $maincolor;
+}
+
+img {
+        border-radius: 3px 3px 0 0;
+        object-fit: cover;
+}
+
+@mixin flexc {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+}
+
+.flex-container {
+        @include flexc;
+        background-color: $maincolor;
+}
+
+@mixin car {
+
+        width: 45%;
+        border: 3px solid $titlecolor;
+        margin-left: 20px;
+        height: 30%;
+        background-color: $cardB;
+
+}
+
+.card {
+        @include car();
+}
+
+h1 {
+
+        font: {
+                family: 'Poppins', sans-serif;
+                size: 30px;
+        }
+
+        color:$titlecolor;
+
+        text: {
+                align: center;
+        }
+}
+
+@media (max-width :$val1) {
+        .flex-container {
+                flex-direction: column;
+
+
+        }
+
+        .card {
+                margin-top: 10px;
+        }
+
+
+}
+
+@media (max-width :$val2) {
+
+
+        .card {
+                width: 50%;
+                margin-bottom: 15px
+        }
+
+}
