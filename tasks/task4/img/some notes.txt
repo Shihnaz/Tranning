@@ -1,0 +1,16 @@
+What  is Sass?
+css extension language and gives your css spuerpower.
+the browser cant read sass,it has to be compiled to  css"you can  use node js to run compiler to watch your sass files
+or using gulp or simply using extension "live sasss compiler" 
+two syntaxes supported by sass (scss"file extension SCSS "Sassy css)
+the original syntax for sass "indented syntax".sass  it uses the sam efeature of scss but uses indentation 
+instead of curly braces and semicolons
+css var and sass var "sass has  variables long before css.css variables compatabilitty with browser is 90%
+sass variables
+we can get rid of the root  we can use $ without using var
+$color=rgb(0,,0,0);
+body{background color:$color ----> then translate to css putting the actual value to css 100% compatibalety of browsers 
+map
+
+
+ 

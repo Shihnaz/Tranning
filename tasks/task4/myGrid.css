@@ -1,0 +1,394 @@
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(170px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  grid-auto-rows: 140px;
+  grid-gap: 10px;
+  grid-auto-flow: row;
+}
+
+.item1 {
+  grid-column: span 2;
+  border-radius: 120px;
+  -webkit-box-shadow: 6px 6px 3px #aaaaaa;
+          box-shadow: 6px 6px 3px #aaaaaa;
+}
+
+.item1 img {
+  text-align: left;
+  padding-top: 0;
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140px;
+  border-radius: 140px 0 0 140px;
+}
+
+.item1 .text p {
+  width: 83%;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: #334455;
+}
+
+.item2 {
+  grid-row: span 2;
+  border-radius: 120px;
+  -webkit-box-shadow: 6px 6px 3px #aaaaaa;
+          box-shadow: 6px 6px 3px #aaaaaa;
+}
+
+.item2 img {
+  padding-bottom: 140px;
+  text-align: left;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140px;
+  border-radius: 140px 140px 0 0;
+}
+
+.item2 .text p {
+  width: 83%;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: #334455;
+}
+
+.item3 {
+  grid-column: span 2;
+  border-radius: 120px;
+  -webkit-box-shadow: 6px 6px 3px #aaaaaa;
+          box-shadow: 6px 6px 3px #aaaaaa;
+}
+
+.item3 img {
+  padding-left: 50%;
+  text-align: left;
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140px;
+  border-radius: 0 140px 140px 0;
+}
+
+.item3 .text p {
+  width: 83%;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: #334455;
+}
+
+.item4 {
+  border-radius: 120px;
+  grid-column: span 2;
+  -webkit-box-shadow: 6px 6px 3px #aaaaaa;
+          box-shadow: 6px 6px 3px #aaaaaa;
+}
+
+.item4 img {
+  padding-left: 50%;
+  text-align: left;
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140px;
+  border-radius: 0 140px 140px 0;
+}
+
+.item4 .text p {
+  width: 83%;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: #334455;
+}
+
+.item5 {
+  border-radius: 120px;
+  grid-row: span 2;
+  -webkit-box-shadow: 6px 6px 3px #aaaaaa;
+          box-shadow: 6px 6px 3px #aaaaaa;
+}
+
+.item5 img {
+  padding-bottom: 140px;
+  text-align: left;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140px;
+  border-radius: 140px 140px 0 0;
+}
+
+.item5 .text p {
+  width: 83%;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: #334455;
+}
+
+.item6 {
+  border-radius: 120px;
+  grid-row: span 2;
+  -webkit-box-shadow: 6px 6px 3px #aaaaaa;
+          box-shadow: 6px 6px 3px #aaaaaa;
+}
+
+.item6 img {
+  padding-top: 140px;
+  text-align: left;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140px;
+  border-radius: 0 0 140px 140px;
+}
+
+.item6 .text p {
+  width: 83%;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: #334455;
+}
+
+.item7 {
+  border-radius: 120px;
+  grid-row: span 2;
+  -webkit-box-shadow: 6px 6px 3px #aaaaaa;
+          box-shadow: 6px 6px 3px #aaaaaa;
+}
+
+.item7 img {
+  padding-top: 140px;
+  text-align: left;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140px;
+  border-radius: 0 0 140px 140px;
+}
+
+.item7 .text p {
+  width: 83%;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: #334455;
+}
+
+.item8 {
+  border-radius: 120px;
+  grid-column: span 2;
+  -webkit-box-shadow: 6px 6px 3px #aaaaaa;
+          box-shadow: 6px 6px 3px #aaaaaa;
+}
+
+.item8 img {
+  text-align: left;
+  padding-top: 0;
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140px;
+  border-radius: 140px 0 0 140px;
+}
+
+.item8 .text p {
+  width: 83%;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: #334455;
+}
+
+.item9 {
+  border-radius: 120px;
+  grid-column: span 2;
+  -webkit-box-shadow: 6px 6px 3px #aaaaaa;
+          box-shadow: 6px 6px 3px #aaaaaa;
+}
+
+.item9 img {
+  padding-left: 50%;
+  text-align: left;
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140px;
+  border-radius: 0 140px 140px 0;
+}
+
+.item9 .text p {
+  width: 83%;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: #334455;
+}
+
+.item10 {
+  border-radius: 120px;
+  grid-row: span 2;
+  -webkit-box-shadow: 6px 6px 3px #aaaaaa;
+          box-shadow: 6px 6px 3px #aaaaaa;
+}
+
+.item10 img {
+  padding-bottom: 140px;
+  text-align: left;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140px;
+  border-radius: 140px 140px 0 0;
+}
+
+.item10 .text p {
+  width: 83%;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: #334455;
+}
+
+.item11 {
+  border-radius: 120px;
+  grid-column: span 2;
+  -webkit-box-shadow: 6px 6px 3px #aaaaaa;
+          box-shadow: 6px 6px 3px #aaaaaa;
+}
+
+.item11 img {
+  text-align: left;
+  padding-top: 0;
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140px;
+  border-radius: 140px 0 0 140px;
+}
+
+.item11 .text p {
+  width: 83%;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: #334455;
+}
+
+.item12 {
+  border-radius: 120px;
+  grid-column: span 2;
+  -webkit-box-shadow: 6px 6px 3px #aaaaaa;
+          box-shadow: 6px 6px 3px #aaaaaa;
+}
+
+.item12 img {
+  text-align: left;
+  padding-top: 0;
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140px;
+  border-radius: 140px 0 0 140px;
+}
+
+.item12 .text p {
+  width: 83%;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: #334455;
+}
+
+.item13 {
+  border-radius: 120px;
+  grid-row: span 2;
+  -webkit-box-shadow: 6px 6px 3px #aaaaaa;
+          box-shadow: 6px 6px 3px #aaaaaa;
+}
+
+.item13 img {
+  padding-bottom: 140px;
+  text-align: left;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140px;
+  border-radius: 140px 140px 0 0;
+}
+
+.item13 .text p {
+  width: 83%;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: #334455;
+}
+
+.item14 {
+  border-radius: 120px;
+  grid-row: span 2;
+  -webkit-box-shadow: 6px 6px 3px #aaaaaa;
+          box-shadow: 6px 6px 3px #aaaaaa;
+}
+
+.item14 img {
+  padding-top: 140px;
+  text-align: left;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140px;
+  border-radius: 0 0 140px 140px;
+}
+
+.item14 .text p {
+  width: 83%;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: #334455;
+}
+
+.item15 {
+  border-radius: 120px;
+  grid-row: span 2;
+  -webkit-box-shadow: 6px 6px 3px #aaaaaa;
+          box-shadow: 6px 6px 3px #aaaaaa;
+}
+
+.item15 img {
+  padding-bottom: 140px;
+  text-align: left;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140px;
+  border-radius: 140px 140px 0 0;
+}
+
+.item15 .text p {
+  width: 83%;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: #334455;
+}
+
+.item16 {
+  border-radius: 120px;
+  grid-column: span 2;
+  -webkit-box-shadow: 6px 6px 3px #aaaaaa;
+          box-shadow: 6px 6px 3px #aaaaaa;
+}
+
+.item16 img {
+  padding-left: 50%;
+  text-align: left;
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 140px;
+  border-radius: 0 140px 140px 0;
+}
+
+.item16 .text p {
+  width: 83%;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+  color: #334455;
+}
+/*# sourceMappingURL=myGrid.css.map */

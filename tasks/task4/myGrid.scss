@@ -1,0 +1,208 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-auto-rows: 140px;
+    grid-gap: 10px;
+    grid-auto-flow: row;
+
+    // div {
+    //     background-color: #1c9;
+    // }
+}
+@mixin par {
+    p {
+        width: 83%;
+        font: {
+            size: 14px;
+            family: "Trebuchet MS";
+        }
+
+        color:#334455;
+    }
+    
+}
+
+
+@mixin left {
+    img {
+         text-align: left;
+         padding-top: 0;
+
+        width: 50%;
+        object-fit: cover;
+        height: 140px;
+        border-radius: 140px 0 0 140px;
+       
+    }
+
+    .text {
+        @include par();
+         
+    }
+
+}
+
+@mixin right {
+    img {
+        padding-left: 50%;
+        text-align: left;
+        width: 50%;
+        object-fit: cover;
+        height: 140px;
+        border-radius: 0 140px 140px 0;
+    }
+    .text {
+       @include par();
+    }
+}
+
+@mixin top {
+    img {
+        padding-bottom: 140px;
+        text-align: left;
+        width: 100%;
+        object-fit: cover;
+        height: 140px;
+        border-radius: 140px 140px 0 0;
+    }
+    .text {
+        @include par();
+     }
+}
+
+@mixin bottom {
+    img {
+        padding-top: 140px;
+        text-align: left;
+        width: 100%;
+        object-fit: cover;
+        height: 140px;
+        border-radius: 0 0 140px 140px;
+    }
+    .text {
+        @include par();
+     }
+}
+
+.item1 {
+    grid-column: span 2;
+    border-radius: 120px;
+    box-shadow: 6px 6px 3px #aaaaaa;
+    @include left;
+}
+
+.item2 {
+    grid-row: span 2;
+    border-radius: 120px;
+    box-shadow: 6px 6px 3px #aaaaaa;
+   
+    @include top();
+}
+
+.item3 {
+    grid-column: span 2;
+    border-radius: 120px;
+    box-shadow: 6px 6px 3px #aaaaaa;
+    @include right();
+}
+
+.item4 {
+    border-radius: 120px;
+    grid-column: span 2;
+    box-shadow: 6px 6px 3px #aaaaaa;
+    @include right();
+}
+
+.item5 {
+    border-radius: 120px;
+    grid-row: span 2;
+    box-shadow: 6px 6px 3px #aaaaaa;
+    @include top;
+}
+
+.item6 {
+    border-radius: 120px;
+    grid-row: span 2;
+    box-shadow: 6px 6px 3px #aaaaaa;
+    @include bottom();
+}
+
+.item7 {
+    border-radius: 120px;
+
+    grid-row: span 2;
+    box-shadow: 6px 6px 3px #aaaaaa;
+    @include bottom();
+}
+
+.item8 {
+    border-radius: 120px;
+
+    grid-column: span 2;
+    box-shadow: 6px 6px 3px #aaaaaa;
+    @include left();
+}
+
+.item9 {
+    border-radius: 120px;
+
+    grid-column: span 2;
+    @include right();
+    box-shadow: 6px 6px 3px #aaaaaa;
+}
+
+.item10 {
+    border-radius: 120px;
+
+    grid-row: span 2;
+    box-shadow: 6px 6px 3px #aaaaaa;
+    @include top();
+}
+
+.item11 {
+    border-radius: 120px;
+
+    grid-column: span 2;
+    box-shadow: 6px 6px 3px #aaaaaa;
+    @include left();
+}
+
+.item12 {
+    border-radius: 120px;
+
+    grid-column: span 2;
+    box-shadow: 6px 6px 3px #aaaaaa;
+    @include left;
+}
+
+.item13 {
+    border-radius: 120px;
+
+    grid-row: span 2;
+    box-shadow: 6px 6px 3px #aaaaaa;
+    @include top;
+}
+
+.item14 {
+    border-radius: 120px;
+
+    grid-row: span 2;
+    box-shadow: 6px 6px 3px #aaaaaa;
+    @include bottom();
+}
+
+.item15 {
+    border-radius: 120px;
+
+    grid-row: span 2;
+    box-shadow: 6px 6px 3px #aaaaaa;
+    @include top();
+}
+
+.item16 {
+    border-radius: 120px;
+
+    grid-column: span 2;
+    box-shadow: 6px 6px 3px #aaaaaa;
+    @include right();
+}
