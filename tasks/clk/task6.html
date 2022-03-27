@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="./design.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Clock</title>
+   <script src="./Time.js"></script>
+</head>
+
+<body>
+   
+   <div class="fixed-header">
+      <h1>Clocky<i class="fa fa-clock-o" style="font-size:48px;color:red"></i> </h1>
+      <button id="digital" onclick="showDigital()">Digital</button>
+      <button id="analog" onclick="showAnalog()" >Analog  </button>
+   </div>
+
+   <div id="modal">
+      <div id="form"></div>
+   </div>
+   <div id="day"></div>
+   <div id="main" style="display: none;">
+      
+      <div id="hour"></div>
+      <div id="min"></div>
+      <div id="second"></div>
+      <div id="pm"></div>
+   </div>
+   <div id="clock2"style="margin-top:20px">
+      <div id="hos"></div>
+      
+      <div id="mos"></div>
+      <div id="sos"></div>
+   </div>
+   <button id="b" onclick="openform()"> Setting Time&#9201;</button>
+
+</body>
+
+</html>
