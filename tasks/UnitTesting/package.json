@@ -1,0 +1,14 @@
+{
+  "name": "jest_test",
+  "version": "1.0.0",
+  "description": "this is for unit testing using jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest "
+  },
+  "author": "Shihnaz Nasser",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
