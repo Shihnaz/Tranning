@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins:wght@300;400&display=swap');
+
+.main {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 30%;
+  height: 30%;
+
+  background-color: white
+}
+
+.header {
+  display: flex;
+  height: 15%;
+  flex-direction: column;
+  background-color: rgb(14, 13, 12);
+
+}
+
+h1 {
+  margin-top: 10%;
+  color: #206eaf;
+  font-size: 30px;
+  font-family: 'PT Serif', serif;
+}
+
+#b1,
+#b2 {
+  margin-left: "10%";
+  margin-bottom: 10%;
+  width: 33%;
+  background-color: white;
+  font-size: 20px;
+  font-family: 'PT Serif', serif;
+  border-radius: 7px;
+  box-shadow: 3px 3px #206eaf;
+
+}
+
+#d1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.st {
+  margin-top: 5%;
+  width: 50%;
+
+}
+
+h3 {
+  margin-top: 2%;
+  font-size: 20px;
+  font-family: 'PT Serif', serif;
+
+
+}
+
+.dropdown {
+  margin-right: 80%;
+  color: #206eaf;
+  padding-top: 2%;
+  display: flex;
+  width: 30%;
+  flex-direction: row;
+  margin-bottom: -8%
+}
+
+#car {
+  margin-left: 30px;
+  margin-top: 10px;
+  color: #206eaf;
+  border: 2px solid #206eaf;
+  width: 150px;
+  height: 30px;
+  font: 1em sans-serif;
+}
+
+#form {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  top: 32%;
+  transform: translate(-50%, 5%);
+  border: 2px solid #206eaf;
+  z-index: 9;
+  height: 350px;
+  width: 35%;
+  background-color: white;
+}
+
+#form>img {
+  height: 60%;
+  width: 90%;
+  padding-left: 20px;
+}
+
+#im img {
+  height: 400px;
+  width: 800px
+}
+
+#close {
+  margin-left: "10%";
+  margin-bottom: 10%;
+  background-color: #206eaf;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  width: 8%;
+  margin-left: 90%;
+
+}
+
+h2 {
+  margin-top: -10%;
+  font-size: 20px;
+  font-family: 'PT Serif', serif;
+  color: #206eaf;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h4 {
+
+  text-align: center;
+  color: #206eaf;
+  font-size: 20px;
+}
+
+.carousel.carousel-slider .control-arrow {
+  text-align: center;
+  width: 20%;
+  height: 50%;
+  color: #206eaf
+}
+.carousel.carousel-slider .control-arrow {
+font-size: 30px;
+}
+/* round buttons on hover */
+.carousel.carousel-slider .control-arrow:hover {
+ 
+  box-shadow: inset 0 0 1px 1px #206eaf;
+
+
+}
