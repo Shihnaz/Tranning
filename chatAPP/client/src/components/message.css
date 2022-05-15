@@ -1,0 +1,67 @@
+.Maincontainer {
+    background: #F3F3F3;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: white;
+    display: inline-block;
+    max-width: 80%;
+  }
+  
+  .Mtext {
+    width: 100%;
+    letter-spacing: 0;
+    float: left;
+    font-size: 1.2em;
+    word-wrap: break-word;
+  }
+  
+  .Mtext img {
+    vertical-align: middle;
+  }
+  
+  .Mcontainer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 5%;
+    margin-top: 3px;
+  }
+  
+  .sentText {
+    display: flex;
+    align-items: center;
+    font-family: Helvetica;
+    color: #828282;
+    letter-spacing: 0.3px;
+  }
+  
+  .pl-10 {
+    padding-left: 10px;
+  }
+  
+  .pr-10 {
+    padding-right: 10px;
+  }
+  
+  .justifyStart {
+    justify-content: flex-start;
+  }
+  
+  .justifyEnd {
+    justify-content: flex-end;
+  }
+  
+  .colorWhite {
+    color: white;
+  }
+  
+  .colorDark {
+    color: #000;
+  }
+  
+  .backgroundBlue {
+    background: #2979FF;
+  }
+  
+  .backgroundLight {
+    background: #cccccc;
+  }
