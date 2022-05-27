@@ -1,0 +1,63 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  @keyframes color {
+    0%   { background: linear-gradient(#e66465, black); }
+    20%  { background: linear-gradient(#ccd7cc, black); }
+    40%  { background: linear-gradient(#b35965, black); }
+    60%  { background: linear-gradient(#b1596f, black); }
+    80%  { background: linear-gradient(#6e4d4d, black); }
+    100% { background: linear-gradient(#e66465, black);}
+  }
+  
+  body {
+    background: linear-gradient(#e66465, black);
+    animation: color 9s infinite linear;
+    height:100vh;
+   
+  }
+  
+  .piano {
+    display: flex;
+    width:80vw;
+    height: 50vh;
+    margin:  12vw ;
+  }
+  h1{
+      font-family: 'Noto Serif', serif;
+      text-align: center;
+      font-size: 50px;
+      color: #fff;
+  }
+  
+  .key {
+    height: calc(var(--width) * 4);
+    width: var(--width);
+    border: 4px solid black;
+    border-radius: .5rem;
+  }
+  
+  .white {
+    --width: 8vw;
+    background-color: white;
+    height: 50vh;
+    border: 1px solid #333;
+  }
+  
+  .white.active {
+    background-color: #CCC;
+  }
+  
+  .black {
+    --width: 5vw;
+    background-color: black;
+    height: 30vh;
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    
+    z-index: 2;
+  }
+  
+  .black.active {
+    background-color: #333;
+  }
